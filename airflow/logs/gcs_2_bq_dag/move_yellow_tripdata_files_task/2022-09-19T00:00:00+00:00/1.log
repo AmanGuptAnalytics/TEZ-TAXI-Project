@@ -1,0 +1,23 @@
+[2022-09-20 14:59:40,381] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: gcs_2_bq_dag.move_yellow_tripdata_files_task scheduled__2022-09-19T00:00:00+00:00 [queued]>
+[2022-09-20 14:59:40,429] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: gcs_2_bq_dag.move_yellow_tripdata_files_task scheduled__2022-09-19T00:00:00+00:00 [queued]>
+[2022-09-20 14:59:40,430] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-20 14:59:40,430] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-09-20 14:59:40,430] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-20 14:59:40,462] {taskinstance.py:1259} INFO - Executing <Task(GCSToGCSOperator): move_yellow_tripdata_files_task> on 2022-09-19 00:00:00+00:00
+[2022-09-20 14:59:40,468] {standard_task_runner.py:52} INFO - Started process 95 to run task
+[2022-09-20 14:59:40,491] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'gcs_2_bq_dag', 'move_yellow_tripdata_files_task', 'scheduled__2022-09-19T00:00:00+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/gcs_to_bq_dag.py', '--cfg-path', '/tmp/tmps_e_p606', '--error-file', '/tmp/tmpfa5gjgg1']
+[2022-09-20 14:59:40,492] {standard_task_runner.py:77} INFO - Job 5: Subtask move_yellow_tripdata_files_task
+[2022-09-20 14:59:40,652] {logging_mixin.py:109} INFO - Running <TaskInstance: gcs_2_bq_dag.move_yellow_tripdata_files_task scheduled__2022-09-19T00:00:00+00:00 [running]> on host 0a2e8243e3d8
+[2022-09-20 14:59:40,818] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=gcs_2_bq_dag
+AIRFLOW_CTX_TASK_ID=move_yellow_tripdata_files_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-19T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-19T00:00:00+00:00
+[2022-09-20 14:59:40,820] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-09-20 14:59:40,822] {gcs_to_gcs.py:346} INFO - Delimiter ignored because wildcard is in prefix
+[2022-09-20 14:59:41,167] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=gcs_2_bq_dag, task_id=move_yellow_tripdata_files_task, execution_date=20220919T000000, start_date=20220920T145940, end_date=20220920T145941
+[2022-09-20 14:59:41,243] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-09-20 14:59:41,372] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
